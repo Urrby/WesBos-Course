@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="./tabs-style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="tabs">
+      <div role="tabList">
+        <button role="tab" aria-selected="true" id="dance">Dance</button>
+        <button role="tab" aria-selected="false" id="webdev">Webdev</button>
+        <button role="tab" aria-selected="false" id="books">Books</button>
+        <button role="tab" aria-selected="false" id="music">Music</button>
+      </div>
+      <div class="tabPanels">
+        <div role="tabPanel" aria-labelledby="dance">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Vitae ab, sapiente neque ut iusto, 
+            ipsam alias veritatis distinctio facilis harum labore! 
+            Accusantium a possimus velit quisquam distinctio soluta 
+            eos eius?
+          </p>
+        </div>
+        <div role="tabPanel" aria-labelledby="webdev" hidden>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Magnam nihil distinctio, fugiat suscipit culpa ex earum
+             doloribus tempore deserunt? Harum nostrum sint consequuntur
+              rem minus non tempore a doloribus quaerat?
+          </p>
+        </div>
+        <div role="tabPanel" aria-labelledby="books" hidden>
+          <p>
+            Lorem ipsum dolor sit amet consectetur,
+             adipisicing elit. Vitae ab, sapiente neque ut iusto, 
+             ipsam alias veritatis distinctio facilis harum labore! 
+             Accusantium a possimus velit quisquam distinctio soluta 
+             eos eius?
+          </p>
+        </div>
+        <div role="tabPanel" aria-labelledby="music" hidden>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Vitae ab, sapiente neque ut iusto, 
+            ipsam alias veritatis distinctio facilis harum labore! 
+            Accusantium a possimus velit quisquam distinctio solut
+            a eos eius?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./tabs.js"></script>
+</body>
+
+</html>

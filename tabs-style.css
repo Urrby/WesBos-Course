@@ -1,0 +1,38 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper{
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: auto;
+  display: grid;
+}
+
+.tabs {
+  display: grid;
+}
+
+[role="tabList"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+
+}
+
+[role="tabPanel"] {
+  background-color: rgba(80, 148, 222, 1);
+  padding: 20px;
+}
+
+button {
+  background-color: rgba(209, 209, 209, 1);
+  border: 0;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+[aria-selected="true"] {
+  background-color: rgba(80, 148, 222, 1);
+}
